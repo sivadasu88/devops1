@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cicd_application:
+    image: ${DOCKER_REGISTRY-}cicdapplication
+    build:
+      context: .\CICD_Application
+      dockerfile: Dockerfile
